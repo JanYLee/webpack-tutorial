@@ -40,19 +40,16 @@ module.exports = {
         test: /\.css$/, 
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          'postcss-loader'
         ]
       },
       { // 处理less文件
         test: /\.less$/,
         use: [
-          {
-            loader: 'style-loader',
-            options: { // loader的配置
-              insertAt: 'top' // 将css插入到head顶部, 不影响手动写在html中的css
-            }
-          },
+          MiniCssExtractPlugin.loader,
           'css-loader',
+          'postcss-loader',
           'less-loader' // 把less转为css
         ]
       }

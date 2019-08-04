@@ -1,4 +1,5 @@
 @import './common.css';
 body {
   background-color: green;
+  transform: rotate(45deg);
 }
