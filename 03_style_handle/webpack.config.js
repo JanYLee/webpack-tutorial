@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development', // 模式 production development
@@ -23,7 +24,11 @@ module.exports = {
         collapseWhitespace: true, // 打包成一行
       },
       hash: true, // 引入js添加哈希戳, 解决缓存问题
-    })
+    }),
+    // 将css抽离出来并命名为main.css
+    new MiniCssExtractPlugin({
+      filename: 'main.css'
+    }),
   ],
   module: { // 模块
     rules: [ // 规则
@@ -34,12 +39,7 @@ module.exports = {
       { 
         test: /\.css$/, 
         use: [
-          {
-            loader: 'style-loader',
-            options: { // loader的配置
-              insertAt: 'top' // 将css插入到head顶部, 不影响手动写在html中的css
-            }
-          },
+          MiniCssExtractPlugin.loader,
           'css-loader'
         ]
       },
