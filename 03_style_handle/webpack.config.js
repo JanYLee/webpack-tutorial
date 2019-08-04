@@ -32,7 +32,7 @@ module.exports = {
       // loader特点 希望功能单一
       // loader有顺序, 默认从右向左或从下至上
       { 
-        test: /\.css/, 
+        test: /\.css$/, 
         use: [
           {
             loader: 'style-loader',
@@ -41,7 +41,20 @@ module.exports = {
             }
           },
           'css-loader'
-        ] 
+        ]
+      },
+      { // 处理less文件
+        test: /\.less$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: { // loader的配置
+              insertAt: 'top' // 将css插入到head顶部, 不影响手动写在html中的css
+            }
+          },
+          'css-loader',
+          'less-loader' // 把less转为css
+        ]
       }
     ]
   }
