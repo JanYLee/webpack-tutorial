@@ -1,9 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  mode: 'development', // 模式 production development
+  mode: 'production', // 模式 production development
   entry: './src/index.js', // 文件入口
   output: { // 打包配置
     filename: 'bundle.[hash:8].js', // 打包后的文件名
@@ -53,6 +55,16 @@ module.exports = {
           'less-loader' // 把less转为css
         ]
       }
+    ]
+  },
+  optimization: { // 优化项
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true, // 是否使用缓存
+        parallel: true, // 是否并发打包
+        sourceMap: true, // 是否打开源码映射方便调试
+      }),
+      new OptimizeCssAssetsPlugin()
     ]
   }
 }

@@ -1,4 +1,4 @@
-let str = require('./common.js');
+// let str = require('./common.js');
 require('./index.css');
 require('./index.less');
-console.log(str);
+// console.log(str);
