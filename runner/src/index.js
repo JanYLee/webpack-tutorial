@@ -6,3 +6,15 @@ require('./index.less');
 let fn = () => {
   console.log('arrow function');
 }
+
+@log
+class A {
+  a = 1
+}
+
+function log(target) {
+  console.log(target);
+}
+
+let a = new A;
+console.log('a', a.a);

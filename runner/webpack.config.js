@@ -62,6 +62,10 @@ module.exports = {
           options: { // babel-loader 需要把es6转为es5
             presets: [
               '@babel/preset-env'
+            ],
+            "plugins": [
+              ["@babel/plugin-proposal-decorators", { "legacy": true }],
+              ["@babel/plugin-proposal-class-properties", { "loose" : true }]
             ]
           }
         }
