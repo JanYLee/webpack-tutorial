@@ -65,10 +65,13 @@ module.exports = {
             ],
             "plugins": [
               ["@babel/plugin-proposal-decorators", { "legacy": true }],
-              ["@babel/plugin-proposal-class-properties", { "loose" : true }]
+              ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+              "@babel/plugin-transform-runtime" // 运行环境包
             ]
           }
-        }
+        },
+        include: path.resolve(__dirname, 'src'), // 包含文件夹
+        exclude: /node_modules/ // 排除文件夹
       }
     ]
   },
