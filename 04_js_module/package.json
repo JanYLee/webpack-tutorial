@@ -30,6 +30,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "@babel/runtime": "^7.5.5"
+    "@babel/runtime": "^7.5.5",
+    "eslint": "^6.1.0",
+    "eslint-loader": "^2.2.1"
   }
 }

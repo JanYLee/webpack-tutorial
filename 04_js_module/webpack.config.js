@@ -55,6 +55,15 @@ module.exports = {
           'less-loader' // 把less转为css
         ]
       },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'eslint-loader',
+          options: {
+            enforce: 'pre' // 优先执行这个loader
+          }
+        }
+      },
       { // 处理js
         test: /\.js$/,
         use: {
