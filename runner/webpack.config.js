@@ -32,11 +32,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'main.css'
     }),
-    new webpack.ProvidePlugin({ // 在每个模块中注入$
-      $: 'jquery',
-      jQuery: 'jquery'
-    })
+    // new webpack.ProvidePlugin({ // 在每个模块中注入$
+    //   $: 'jquery',
+    //   jQuery: 'jquery'
+    // })
   ],
+  externals: {
+    jquery: `$`
+  },
   module: { // 模块
     rules: [ // 规则
       // css-loader 用于解析@import 'xxx.css'语法
