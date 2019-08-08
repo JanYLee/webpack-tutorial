@@ -1,4 +1,3 @@
-import $ from 'jquery'; // 内联loader
 console.log($);
 
 console.log(window.$);

@@ -62,6 +62,7 @@
         "valid-typeof": 2
     },
     "env": {
-        "browser": true
+        "browser": true,
+        "commonjs": true
     }
 }

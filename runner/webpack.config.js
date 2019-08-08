@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'development', // 模式 production development
@@ -31,6 +32,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'main.css'
     }),
+    new webpack.ProvidePlugin({ // 在每个模块中注入$
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ],
   module: { // 模块
     rules: [ // 规则
@@ -55,19 +60,19 @@ module.exports = {
           'less-loader' // 把less转为css
         ]
       },
-      {
-        test: require.resolve('jquery'),
-        use: 'expose-loader?$'
-      },
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'eslint-loader',
-          options: {
-            enforce: 'pre' // 优先执行这个loader
-          }
-        }
-      },
+      // {
+      //   test: require.resolve('jquery'),
+      //   use: 'expose-loader?$'
+      // },
+      // {
+      //   test: /\.js$/,
+      //   use: {
+      //     loader: 'eslint-loader',
+      //     options: {
+      //       enforce: 'pre' // 优先执行这个loader
+      //     }
+      //   }
+      // },
       { // 处理js
         test: /\.js$/,
         use: {
