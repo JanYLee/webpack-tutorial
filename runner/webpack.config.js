@@ -56,6 +56,10 @@ module.exports = {
         ]
       },
       {
+        test: require.resolve('jquery'),
+        use: 'expose-loader?$'
+      },
+      {
         test: /\.js$/,
         use: {
           loader: 'eslint-loader',
