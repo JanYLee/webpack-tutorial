@@ -15,3 +15,9 @@
   * 3.4 [抽离css](https://www.yuque.com/tokido/inza6t/ts7oyw)
   * 3.5 [添加浏览器前缀](https://www.yuque.com/tokido/inza6t/cpoody)
   * 3.6 [压缩css](https://www.yuque.com/tokido/inza6t/sycmss)
+* 4 js模块处理
+  * 4.1 [es6转es5](https://www.yuque.com/tokido/inza6t/bpb9g5)
+  * 4.2 [类属性和装饰器转es5](https://www.yuque.com/tokido/inza6t/qsls1p)
+  * 4.3 [runtime和polyfill转化](https://www.yuque.com/tokido/inza6t/uis4lb)
+  * 4.4 [eslint校验](https://www.yuque.com/tokido/inza6t/uynf66)
+  * 4.5 [引入全局变量](https://www.yuque.com/tokido/inza6t/ffk0qm)
