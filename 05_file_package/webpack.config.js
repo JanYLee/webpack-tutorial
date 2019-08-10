@@ -11,6 +11,7 @@ module.exports = {
   output: { // 打包配置
     filename: 'bundle.[hash:8].js', // 打包后的文件名
     path: path.resolve(__dirname, 'dist'), // 入口路径, 需要写成绝对路径
+    // publicPath: 'http://www.Janya.com' // 给文件引入添加路径
   },
   devServer: { // 本地开发服务器配置
     port: 3000, // 修改端口号
@@ -30,7 +31,7 @@ module.exports = {
     }),
     // 将css抽离出来并命名为main.css
     new MiniCssExtractPlugin({
-      filename: 'main.css'
+      filename: 'css/main.css'
     }),
     // new webpack.ProvidePlugin({ // 在每个模块中注入$
     //   $: 'jquery',
@@ -73,7 +74,9 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 200*1024
+              limit: 1,
+              outputPath: '/img/', // 文件打包后输出路径
+              publicPath: 'http://www.Janya.com'
             }
           }
         ],
