@@ -21,3 +21,6 @@
   * 4.3 [runtime和polyfill转化](https://www.yuque.com/tokido/inza6t/uis4lb)
   * 4.4 [eslint校验](https://www.yuque.com/tokido/inza6t/uynf66)
   * 4.5 [引入全局变量](https://www.yuque.com/tokido/inza6t/ffk0qm)
+* 5 文件打包
+  * 5.1 [打包图片](https://www.yuque.com/tokido/inza6t/zii4ty)
+  * 5.2 [打包后的文件分类](https://www.yuque.com/tokido/inza6t/zn7i5d)
