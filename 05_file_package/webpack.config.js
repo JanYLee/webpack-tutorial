@@ -42,11 +42,15 @@ module.exports = {
   },
   module: { // 模块
     rules: [ // 规则
-      // css-loader 用于解析@import 'xxx.css'语法
-      // style-loader 用于把css插入head标签中
+      
       // loader特点 希望功能单一
       // loader有顺序, 默认从右向左或从下至上
-      { 
+      {
+        test: /\.html$/,
+        use: 'html-withimg-loader'
+      },
+      { // css-loader 用于解析@import 'xxx.css'语法
+        // style-loader 用于把css插入head标签中
         test: /\.css$/, 
         use: [
           MiniCssExtractPlugin.loader,
@@ -67,8 +71,11 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
-          },
+            loader: 'url-loader',
+            options: {
+              limit: 200*1024
+            }
+          }
         ],
       },
       // {

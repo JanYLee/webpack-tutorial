@@ -24,10 +24,14 @@
 // let a = new A;
 // console.log('a', a.a);
 
+import './index.css';
+
 import ebon from './ebon.png'; // 把图片引入, 返回一个新的图片地址
 const image = new Image();
 
 console.log(ebon);
 image.src = ebon;
+image.width = 100;
+image.height = 100;
 
 document.body.appendChild(image);
