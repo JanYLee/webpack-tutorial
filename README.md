@@ -5,9 +5,11 @@
 > 每一节源码在对应文件夹, [runner](./runner)文件夹为测试用
 
 * 1 基础配置
-   * 1.1 [webpack基本配置](https://www.yuque.com/tokido/inza6t/ubrmhr)
-   * 1.2 [初步分析打包后的代码](https://www.yuque.com/tokido/inza6t/uagm3f)
-* 2 [添加本地服务器和html插件](https://www.yuque.com/tokido/inza6t/vdf1g8)
+  * 1.1 [webpack基本配置](https://www.yuque.com/tokido/inza6t/ubrmhr)
+  * 1.2 [初步分析打包后的代码](https://www.yuque.com/tokido/inza6t/uagm3f)
+* 2 添加本地服务器和html插件
+  * 2.1 [添加本地服务器](https://www.yuque.com/tokido/inza6t/higixm)
+  * 2.2 [添加html插件](https://www.yuque.com/tokido/inza6t/xwaz3y)
 * 3 样式处理
   * 3.1 [css 配置及插件引入](https://www.yuque.com/tokido/inza6t/mwt4fp)
   * 3.2 [loader的配置](https://www.yuque.com/tokido/inza6t/bnbgug)
