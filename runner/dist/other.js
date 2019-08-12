@@ -81,42 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/other.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/ebon.png":
+/***/ "./src/other.js":
 /*!**********************!*\
-  !*** ./src/ebon.png ***!
+  !*** ./src/other.js ***!
   \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"http://www.Janya.com/eed74ac26dba4c8b35530793eb482d42.png\";\n\n//# sourceURL=webpack:///./src/ebon.png?");
-
-/***/ }),
-
-/***/ "./src/index.css":
-/*!***********************!*\
-  !*** ./src/index.css ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/index.css?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ebon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ebon.png */ \"./src/ebon.png\");\n/* harmony import */ var _ebon_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ebon_png__WEBPACK_IMPORTED_MODULE_1__);\n// import $ from 'jquery';\n// console.log($);\n// console.log(window.$);\n// import str from './common.js';\n// require('./index.css');\n// require('./index.less');\n// console.log(str);\n// let fn = () => {\n//   console.log('arrow function');\n// }\n// @log\n// class A {\n//   a = 1\n// }\n// function log(target) {\n//   console.log(target);\n// }\n// let a = new A;\n// console.log('a', a.a);\n\n // 把图片引入, 返回一个新的图片地址\n\nvar image = new Image();\nconsole.log(_ebon_png__WEBPACK_IMPORTED_MODULE_1___default.a);\nimage.src = _ebon_png__WEBPACK_IMPORTED_MODULE_1___default.a;\nimage.width = 100;\nimage.height = 100;\ndocument.body.appendChild(image);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("console.log('other');\n\n//# sourceURL=webpack:///./src/other.js?");
 
 /***/ })
 
