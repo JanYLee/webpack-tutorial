@@ -31,6 +31,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'main.css'
     }),
+
+    // webpack 4版本可以将这两个压缩优化项放于plugins中或者optimization
+    // new UglifyJsPlugin({
+    //   cache: true, // 是否使用缓存
+    //   parallel: true, // 是否并发打包
+    //   sourceMap: true, // 是否打开源码映射方便调试
+    // }),
+    // new OptimizeCssAssetsPlugin()
   ],
   module: { // 模块
     rules: [ // 规则
