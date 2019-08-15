@@ -26,3 +26,10 @@
 * 5 文件打包
   * 5.1 [打包图片](https://www.yuque.com/tokido/inza6t/zii4ty)
   * 5.2 [打包后的文件分类](https://www.yuque.com/tokido/inza6t/zn7i5d)
+* 6 打包相关配置
+  * 6.1 [打包多页应用](https://www.yuque.com/tokido/inza6t/yvs2pg)
+  * 6.2 [source-map配置](https://www.yuque.com/tokido/inza6t/gk6b6m)
+  * 6.3 [自动打包实体文件](https://www.yuque.com/tokido/inza6t/rgmlwi)
+  * 6.4 [自动清除打包目录](https://www.yuque.com/tokido/inza6t/aro1p4)
+  * 6.5 [打包额外的文件](https://www.yuque.com/tokido/inza6t/elry60)
+  * 6.6 [配置打包文件头部信息](https://www.yuque.com/tokido/inza6t/ogvq76)
