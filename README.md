@@ -37,4 +37,6 @@
   * 7.1 [从服务端获取数据的跨域配置](https://www.yuque.com/tokido/inza6t/yq5o6p)
   * 7.2 [mock数据](https://www.yuque.com/tokido/inza6t/gav8yc)
   * 7.3 [从服务端启动webpack](https://www.yuque.com/tokido/inza6t/az8acr)
-  
+* 8 路径和环境配置
+  * 8.1 [resolve优化路径](https://www.yuque.com/tokido/inza6t/tkyr5w)
+  * 8.2 [不同环境的区分](https://www.yuque.com/tokido/inza6t/cilowb)
