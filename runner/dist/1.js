@@ -1,2 +1,0 @@
-/*! hash:8ed8ecd2972098287eba, chunkhash:678dad602aa061441d80, name:1, filebase:1.js, query:, file:1.js */
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],[,function(s,n,o){"use strict";o.r(n),n.default="source.js---"}]]);
