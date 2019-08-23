@@ -1,0 +1,2 @@
+/*! hash:38efffceee0c5d619938, chunkhash:c479589f713517af005e, name:common~index~other, filebase:common~index~other.js, query:, file:common~index~other.js */
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],[,function(o,n){console.log("a-----")},function(o,n){console.log("b-----")}]]);
