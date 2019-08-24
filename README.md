@@ -40,3 +40,12 @@
 * 8 路径和环境配置
   * 8.1 [resolve优化路径](https://www.yuque.com/tokido/inza6t/tkyr5w)
   * 8.2 [不同环境的区分](https://www.yuque.com/tokido/inza6t/cilowb)
+* 9 优化
+  * 9.1 [noParse避免解析](https://www.yuque.com/tokido/inza6t/fof557)
+  * 9.2 [忽略第三方包多余的模块](https://www.yuque.com/tokido/inza6t/xx43bz)
+  * 9.3 [动态链接库](https://www.yuque.com/tokido/inza6t/wedwgd)
+  * 9.4 [多线程打包](https://www.yuque.com/tokido/inza6t/pdrm35)
+  * 9.5 [webpack自带优化](https://www.yuque.com/tokido/inza6t/rxbqpg)
+  * 9.6 [多页面抽离公共代码, 第三方代码抽离](https://www.yuque.com/tokido/inza6t/slguk6)
+  * 9.7 [懒加载](https://www.yuque.com/tokido/inza6t/ef9xdd)
+  * 9.8 [热更新](https://www.yuque.com/tokido/inza6t/ro2ndh)
