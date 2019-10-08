@@ -1,26 +1,28 @@
-const { SyncBailHook } = require('./tapable/lib/index.js');
+const { SyncLoopHook } = require("./tapable/lib/index.js");
 
 class Lesson {
   constructor(props) {
     // 创建钩子
     this.hooks = {
-      arch: new SyncBailHook(['name']),
-    }
+      arch: new SyncLoopHook(["name"])
+    };
+    this.counter = 0;
   }
-  
-  tap() { // 注册监听函数
+
+  tap() {
+    // 注册监听函数
     // 注册了两个事件, 叫lesson1和lesson2
-    this.hooks.arch.tap('lesson1', function(name) {
-      console.log('lesson1', name);
-      return 'stop learning';
-    })
-    this.hooks.arch.tap('lesson2', function(name) {
-      console.log('lesson2', name);
-    })
+    this.hooks.arch.tap("lesson1", name => {
+      console.log("lesson1", name);
+      return ++this.counter === 3 ? undefined : "continue";
+    });
+    this.hooks.arch.tap("lesson2", data => {
+      console.log("lesson2", data);
+    });
   }
 
   start() {
-    this.hooks.arch.call('jay');
+    this.hooks.arch.call("jay");
   }
 }
 
